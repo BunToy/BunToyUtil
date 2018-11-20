@@ -203,6 +203,18 @@ public class StringUtil {
         return builder.toString();
     }
 
+    /**
+     * 格式字符串  0xer222222....eise222222
+     *
+     * @param str
+     * @return
+     */
+    public static String subAddressTen(String str) {
+        StringBuilder builder = new StringBuilder();
+        builder.append(str.substring(0, 10)).append("....").append(str.substring(str.length() - 10));
+        return builder.toString();
+    }
+
 
     /**
      * 电话号码验证
